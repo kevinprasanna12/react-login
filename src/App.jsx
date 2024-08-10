@@ -7,7 +7,7 @@ import Login from './components/Login.jsx'
 function App() {
   const route = createBrowserRouter([
     {
-      path:'/',
+      path:'/react-login/',
       element: <Login/>
 
     },

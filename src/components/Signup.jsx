@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Signup.css'
 
@@ -63,7 +64,7 @@ const Signup = () => {
                 </div>
 
                 <div className="redirect">
-                    <p className='direct-login'>If you have a account, <Link to="/" type='submit'>Login</Link> </p>
+                    <p className='direct-login'>If you have a account, <Link to="/react-login/" type='submit'>Login</Link> </p>
                     <a href='#' className='direct-login'>forgot password?</a>
                 </div>
 
@@ -76,10 +77,10 @@ const Signup = () => {
                 <p className='or'>or</p>  
 
                 <div className="social">
-                  <a href=""><img src="./icons/icons8-google-48.png" alt="google" /></a>
-                  <a href=""><img src="./icons/icons8-linked-in-48.png" alt="linked in" /></a>
-                  <a href=""><img src="./icons/icons8-microsoft-48.png" alt="microsoft" /></a>
-                </div>
+                  <a href=""><img src="react-login/public/icons/icons8-google-48.png" alt="google" /></a>
+                  <a href=""><img src="react-login/public/icons/icons8-linked-in-48.png" /></a>
+                  <a href=""><img src="react-login/public/icons/icons8-microsoft-48.png" /></a>
+                </div> 
 
             
               </div>
