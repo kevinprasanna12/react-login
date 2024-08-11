@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/react-login/' element={<Login/>} />
-        <Route path='/signup' element={<Signup/>} />
+        <Route path='/react-login/' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
       </Routes>
     </>
   )
