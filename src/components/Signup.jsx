@@ -77,9 +77,9 @@ const Signup = () => {
                 <p className='or'>or</p>  
 
                 <div className="social">
-                  <a href=""><img src="react-login/public/icons/icons8-google-48.png" alt="google" /></a>
-                  <a href=""><img src="react-login/public/icons/icons8-linked-in-48.png" /></a>
-                  <a href=""><img src="react-login/public/icons/icons8-microsoft-48.png" /></a>
+                  <a href="#"><img src="react-login/public/icons/icons8-google-48.png" /></a>
+                  <a href="#"><img src="/react-login/public/icons/icons8-linked-in-48.png" /></a>
+                  <a href="#"><img src="react-login/public/icons/icons8-microsoft-48.png" /></a>
                 </div> 
 
             
