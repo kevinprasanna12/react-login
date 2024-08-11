@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Login/>} />
+        <Route path='/react-login/' element={<Login/>} />
         <Route path='/signup' element={<Signup/>} />
       </Routes>
     </>
