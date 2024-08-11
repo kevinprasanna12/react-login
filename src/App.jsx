@@ -1,25 +1,16 @@
 import { useState } from 'react'
-import {RouterProvider,createBrowserRouter} from "react-router-dom"
+import {Routes,Route} from "react-router-dom"
 import './App.css'
 import Signup from './components/Signup.jsx'
 import Login from './components/Login.jsx'
 
 function App() {
-  const route = createBrowserRouter([
-    {
-      path:'/react-login/',
-      element: <Login/>
-
-    },
-    {
-      path:'/signup',
-      element:<Signup/>
-    }
-  ]);
-
   return (
     <>
-      <RouterProvider router={route}></RouterProvider>
+      <Routes>
+        <Route path='/react-login/' element={<Login/>} />
+        <Route path='/signup' element={<Signup/>} />
+      </Routes>
     </>
   )
 }
