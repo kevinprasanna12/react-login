@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom"
 import './Signup.css'
 
 
@@ -64,7 +64,7 @@ const Signup = () => {
                 </div>
 
                 <div className="redirect">
-                    <p className='direct-login'>If you have a account, <Link to="/react-login/" type='submit'>Login</Link> </p>
+                    <p className='direct-login'>If you have a account, <Link to="/react-login/" type='submit'> Login</Link> </p>
                     <a href='#' className='direct-login'>forgot password?</a>
                 </div>
 

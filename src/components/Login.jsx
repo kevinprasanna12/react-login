@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom"
 import './login.css'
 
 
@@ -30,7 +30,8 @@ const Login = () => {
                           setupdate({
                             name:e.target.value
                           })
-                        }}
+                        }
+                      }
                       />
                     </div>
                     </div>
@@ -44,7 +45,8 @@ const Login = () => {
                           setupdate({
                             password:e.target.value
                           })
-                        }}
+                        }
+                      }
                         />
                     </div>
                 
