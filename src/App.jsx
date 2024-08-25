@@ -1,17 +1,21 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Routes, Route,useLocation} from "react-router-dom";
 import './App.css';
 import Signup from './components/Signup.jsx';
 import Login from './components/Login.jsx';
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+
+  const loc = useLocation();
+
   return (
     <>
-      <Router>
-        <Routes>
+    <AnimatePresence mode="wait">
+      <Routes location={loc} key={loc.pathname}>
           <Route path="/react-login/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-        </Routes>
-      </Router>
+      </Routes>
+      </AnimatePresence>
     </>
   );
 }

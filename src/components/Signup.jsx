@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from "react-router-dom"
 import './Signup.css'
-
+import { motion } from "framer-motion"
 
 
 const Signup = () => {
@@ -16,7 +16,10 @@ const Signup = () => {
   <>
       <form action="">
         <div className="body">
-            <div className="container">
+            <motion.div className="container"
+             initial={{y:"50%", opacity:0}}
+             animate={{y:"0", opacity:1}}
+             transition={{duration:1, delay:.2}}>
                 <div className="header">
                     <h1>Sign Up</h1>
                 </div>
@@ -83,10 +86,19 @@ const Signup = () => {
                 </div> 
 
             
-              </div>
+              </motion.div>
 
         </div>
     </form>
+
+    <motion.div className='slide'
+  initial={{y:"100%"}}
+  animate={{y:"-100%",
+  display:"none"}}
+  transition={{duration:1}}
+  />                   
+     
+
   </>
 )
 }
