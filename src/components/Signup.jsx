@@ -19,7 +19,7 @@ const Signup = () => {
             <motion.div className="container"
              initial={{y:"50%", opacity:0}}
              animate={{y:"0", opacity:1}}
-             transition={{duration:1, delay:.2}}>
+             transition={{duration:.5, delay:.2}}>
                 <div className="header">
                     <h1>Sign Up</h1>
                 </div>
@@ -91,13 +91,13 @@ const Signup = () => {
         </div>
     </form>
 
-    <motion.div className='slide'
+    {/* <motion.div className='slide'
   initial={{y:"100%"}}
   animate={{y:"-100%",
   display:"none"}}
   transition={{duration:1}}
   />                   
-     
+      */}
 
   </>
 )
