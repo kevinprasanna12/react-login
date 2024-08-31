@@ -12,7 +12,7 @@ function App() {
     <>
     <AnimatePresence mode="wait">
       <Routes location={loc} key={loc.pathname}>
-          <Route path="/react-login/" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
       </Routes>
       </AnimatePresence>
